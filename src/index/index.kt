@@ -3,16 +3,15 @@
 package index
 
 
-import kotlinx.html.style
-import kotlinx.html.title
-import blackJack.*
-import react.dom.*
-import kotlin.browser.*
+import blackJack.app
+import blackjack.models.Game
+import react.dom.render
+import kotlin.browser.document
 
 fun main(args: Array<String>) {
     val rootDiv = document.getElementById("root")
     render(rootDiv) {
-        gameUi()
+        app()
 
         }
 
